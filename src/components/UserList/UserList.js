@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import UserInfo from "../UserInfo/UserInfo";
 import styles from './UserList.scss'
+import { useDispatch } from "react-redux";
+import { fetchGists } from "../../store/getDistsInfo/action";
 
 const UserList = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchGists());
+  }, []);
+
   const data = [
     {
       title: "Some Lorem",

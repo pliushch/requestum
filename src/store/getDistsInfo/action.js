@@ -22,8 +22,13 @@ const fetchGistsFailure = () => ({
 // }
 
 export const fetchGists = () => {
-  return dispatch => {
-    getDists().then(data => console.log(data));
-    // dispatch(setStatus(response.data));
+  return async dispatch => {
+    dispatch(fetchGistsRequest())
+    try {
+      const data = await getDists()
+      console.log(data);
+    } catch (e) {
+      return 1
+    }
   }
 }
