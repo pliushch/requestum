@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.svg";
 import styles from "./Header.scss";
 
 const Header = () => (
-  <header className={styles.header}>
+  <div className={styles.header}>
     <div className={styles.logo}>
       <img src={logo} alt="requestrum" />
       <div>
@@ -12,7 +12,7 @@ const Header = () => (
       </div>
     </div>
     <p className={styles.text}>Github users search app</p>
-  </header>
+  </div>
 );
 
 export default Header;

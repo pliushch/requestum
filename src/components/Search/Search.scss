@@ -1,6 +1,9 @@
 .search {
- color: white;
-  padding: 16px 0;
+  color: white;
+  margin-bottom: 40px;
+  @media (min-width: 768px) {
+    margin-right: 20px;
+  }
 }
 
 .input {
@@ -17,6 +20,7 @@
 }
 
 .value {
+  width: fit-content;
   margin-bottom: 5px;
   cursor: pointer;
 }

@@ -1,0 +1,10 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}

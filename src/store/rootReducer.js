@@ -1,12 +1,8 @@
 import {combineReducers} from "redux";
-import { authReducer } from "./auth/reducer";
-import technicalDocument from "./searchTechnicalDocumentation/reducer";
-import { selectedTechnicalDocument } from "./selectedTechnicalDocument/reducer";
+import { reducer } from "./getDistsInfo/reducer";
 
 const rootReducer = combineReducers({
-  auth: authReducer,
-  technicalDocument,
-  selectedTechnicalDocument,
+  reducer: reducer
 })
 
 export default rootReducer

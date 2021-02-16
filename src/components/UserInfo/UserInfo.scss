@@ -1,0 +1,27 @@
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+  & p {
+    font-size: 12px;
+  }
+  & span {
+    font-weight: bold;
+  }
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.language {
+  margin-bottom: 10px;
+}

@@ -1,5 +1,5 @@
 .header {
-  padding: 20px;
+  padding: 20px 0;
   color: #f11869;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@
 }
 
 .text {
+  font-size: 12px;
   @media (min-width: 768px) {
     text-align: right;
   }
