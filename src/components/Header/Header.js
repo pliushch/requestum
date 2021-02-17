@@ -5,7 +5,7 @@ import styles from "./Header.scss";
 const Header = () => (
   <div className={styles.header}>
     <div className={styles.logo}>
-      <img src={logo} alt="requestrum" />
+      <img src={logo} alt="requestum" />
       <div>
         <h2>requestum</h2>
         <h3>web development company</h3>

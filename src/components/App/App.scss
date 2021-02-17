@@ -1,6 +1,9 @@
 .wrapper {
   background: #273345;
   font-family: sans-serif;
+  min-height: 100vh;
+  @media (min-width: 768px) {
+  }
 }
 
 .container {

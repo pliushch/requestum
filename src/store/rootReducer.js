@@ -1,8 +1,8 @@
-import {combineReducers} from "redux";
-import { reducer } from "./getDistsInfo/reducer";
+import { combineReducers } from "redux";
+import { userInfo } from "./userInfo/reducer";
 
 const rootReducer = combineReducers({
-  reducer
-})
+  userInfo,
+});
 
-export default rootReducer
+export default rootReducer;

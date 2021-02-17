@@ -1,7 +1,9 @@
 .search {
   color: white;
   margin-bottom: 40px;
+  line-break: anywhere;
   @media (min-width: 768px) {
+    min-width: 200px;
     margin-right: 20px;
   }
 }

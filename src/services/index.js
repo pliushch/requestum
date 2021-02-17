@@ -1,5 +1,9 @@
 import axios from "axios";
 
-export const getDists = async () => {
-  return await axios.get("https://api.github.com/gists/public");
+const instance = axios.create({
+  baseURL: 'https://api.github.com/users/',
+});
+
+export const searchUserInfo = async (value) => {
+  return await instance.get(`${value}/subscriptions`);
 };
