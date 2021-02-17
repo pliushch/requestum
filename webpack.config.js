@@ -52,7 +52,7 @@ module.exports = (env) => {
     output: {
       filename: filename("js"),
       path: path.resolve(__dirname, "build"),
-      // publicPath: isDev ? "/" : "",
+      publicPath: isDev ? "/" : "",
       // publicPath: "requestum",
     },
     resolve: {
