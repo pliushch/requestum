@@ -51,7 +51,7 @@ module.exports = (env) => {
     mode: env.mode,
     output: {
       filename: filename("js"),
-      path: path.resolve(__dirname, "public"),
+      path: path.resolve(__dirname, "build"),
       // publicPath: isDev ? "/" : "",
       // publicPath: "requestum",
     },
@@ -60,7 +60,7 @@ module.exports = (env) => {
     },
     devtool: isDev ? "source-map" : false,
     devServer: {
-      contentBase: path.join(__dirname, "public"),
+      contentBase: path.join(__dirname, "build"),
       port: 8000,
       compress: true,
       historyApiFallback: true,
